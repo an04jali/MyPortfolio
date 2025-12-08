@@ -1,0 +1,285 @@
+/* Contacts.css */
+
+/* Container Styles */
+.contacts-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #091340 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #092e48 0%, #0a0542 50%, #165a92 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background decoration */
+.contacts-container::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(11, 21, 75, 0.1);
+  border-radius: 50%;
+  top: -100px;
+  right: -100px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.contacts-container::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(27, 94, 160, 0.1);
+  border-radius: 50%;
+  bottom: -50px;
+  left: -50px;
+  animation: float 8s ease-in-out infinite reverse;
+}
+
+/* Left Contact Section */
+.leftContact {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.leftContact img {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(180, 216, 17, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.leftContact img:hover {
+  transform: scale(1.05);
+}
+
+/* Right Contact Section - Form */
+.rightContact {
+  flex: 1;
+  padding: 40px;
+  animation: slideInRight 0.8s ease-out;
+}
+
+.rightContact form {
+  background: rgba(0, 1, 5, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Form Title (optional - you can add an h2 in your JSX) */
+.rightContact form::before {
+  content: 'Get In Touch';
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #111271 0%, #1b6fb5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Input and Textarea Styles */
+.rightContact input,
+.rightContact textarea {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border: 2px solid #08477d;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.rightContact input:focus,
+.rightContact textarea:focus {
+  border-color: #388cd0;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.1);
+  transform: translateY(-2px);
+}
+
+.rightContact input::placeholder,
+.rightContact textarea::placeholder {
+  color: #430d0d;
+  font-size: 15px;
+}
+
+.rightContact textarea {
+  min-height: 150px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+/* Submit Button */
+.btn1 {
+  width: 100%;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #071a2b 0%, #1668b9 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(33, 150, 243, 0.4);
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .contacts-container {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  
+  .leftContact {
+    margin-bottom: 30px;
+  }
+  
+  .rightContact {
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .rightContact form {
+    padding: 40px 30px;
+  }
+  
+  .rightContact form::before {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contacts-container {
+    padding: 30px 15px;
+  }
+  
+  .rightContact form {
+    padding: 30px 20px;
+  }
+  
+  .rightContact form::before {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .rightContact input,
+  .rightContact textarea {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+  
+  .btn {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+  
+  .leftContact img {
+    border-radius: 15px;
+  }
+}
+
+/* Loading state for button (optional) */
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background: #90caf9;
+}
+
+/* Success/Error messages (if you add them later) */
+.success-message {
+  color: #4caf50;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.error-message {
+  color: #f44336;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 500;
+}

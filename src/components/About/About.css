@@ -1,0 +1,419 @@
+#about {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.leftAbout {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circle-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1c72b8, #ffffff);
+    box-shadow: 0 0 10px #1c72b8;
+    margin: 5px 0;
+}
+
+.line {
+    width: 2px;
+    height: 60px;
+    background-color: #aab3c8;
+}
+
+.rightAbout {
+    width: 85%;
+    padding: 20px 40px;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rightAbout h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* --- Introduction Cards Styles --- */
+.intro-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
+}
+
+.intro-card {
+    background: linear-gradient(135deg, rgba(28, 114, 184, 0.15), rgba(36, 36, 62, 0.8));
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgba(28, 114, 184, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.intro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(28, 114, 184, 0.4);
+    border-color: rgba(28, 114, 184, 0.6);
+}
+
+.intro-icon {
+    font-size: 2.5em;
+    color: #1c72b8;
+    margin-bottom: 12px;
+}
+
+.intro-card h4 {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.intro-card p {
+    font-size: 0.95em;
+    color: #aab3c8;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* --- Goal Section --- */
+.goal-section {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.1), rgba(25, 118, 210, 0.05));
+    border-left: 4px solid #2196F3;
+    border-radius: 8px;
+}
+
+.goal-text {
+    font-size: 1.1em;
+    color: #e0e0e0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.goal-text strong {
+    color: #2196F3;
+    font-weight: 600;
+}
+
+/* --- Skills Heading --- */
+.skills-heading {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+/* --- Skill Cards Styles --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    background-color: rgba(36, 36, 62, 0.8);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+    border: 1px solid rgba(75, 75, 120, 0.5);
+}
+
+/* ---RESUME CARD---- */
+.resume-card {
+    background-color: rgba(65, 91, 147, 0.8);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 30px rgba(65, 164, 152, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+    border: 1px solid rgba(224, 224, 238, 0.5);
+}
+
+.resume-card h3 {
+    font-size: 1.4em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.resume-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(64, 41, 41, 0.6), 0 0 25px rgba(21, 87, 142, 0.7);
+    background-color: rgba(6, 12, 46, 0.95);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(34, 133, 214, 0.7);
+    background-color: rgba(49, 49, 96, 0.95);
+}
+
+.card-icon {
+    font-size: 2.5em;
+    color: #1c72b8;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 1.4em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 0.95em;
+    color: #aab3c8;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.skill-tags span {
+    background-color: rgba(28, 114, 184, 0.3);
+    color: #8ed0ff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    white-space: nowrap;
+    border: 1px solid rgba(28, 114, 184, 0.6);
+}
+
+/* --- Download Button Styles --- */
+.download-btn {
+    background: linear-gradient(135deg, #2196F3, #1976D2);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #1f5886, #2196F3);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(33, 150, 243, 0.5);
+}
+
+.download-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(29, 69, 102, 0.4);
+}
+
+.download-btn:focus {
+    outline: 2px solid #192833;
+    outline-offset: 2px;
+}
+
+/* --- Achievements Section --- */
+.achievements-heading {
+    font-size: 2em;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+}
+
+.achievement-card {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(36, 36, 62, 0.85));
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #FFD700, #FFA500);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.achievement-card:hover::before {
+    transform: scaleX(1);
+}
+
+.achievement-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 35px rgba(255, 193, 7, 0.4);
+    border-color: rgba(255, 193, 7, 0.6);
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.15), rgba(36, 36, 62, 0.9));
+}
+
+.achievement-icon {
+    font-size: 3em;
+    color: #FFD700;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.5));
+}
+
+.achievement-card h4 {
+    font-size: 1.3em;
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.achievement-card p {
+    font-size: 0.95em;
+    color: #b8c5d6;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    #about {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .leftAbout {
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .circle-line {
+        flex-direction: row;
+        padding: 20px 0;
+    }
+
+    .line {
+        width: 60px;
+        height: 2px;
+    }
+
+    .rightAbout {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .goal-section {
+        text-align: center;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rightAbout h2 {
+        font-size: 2em;
+    }
+
+    .intro-card h4 {
+        font-size: 1.1em;
+    }
+
+    .intro-card p {
+        font-size: 0.9em;
+    }
+
+    .goal-text {
+        font-size: 1em;
+    }
+
+    .skills-heading {
+        font-size: 1.6em;
+    }
+
+    .achievements-heading {
+        font-size: 1.6em;
+        margin-top: 30px;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-card h4 {
+        font-size: 1.2em;
+    }
+
+    .achievement-card p {
+        font-size: 0.9em;
+    }
+
+    .download-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,379 @@
+/* Footer Styles */
+.footer {
+  background: linear-gradient(135deg, #1a1f3a 0%, #0f1419 100%);
+  color: #b8c5d6;
+  padding: 4rem 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    #60a5fa 50%, 
+    transparent 100%);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Brand Section */
+.footer-brand {
+  color: #60a5fa;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.code-icon {
+  color: #60a5fa;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.footer-tagline {
+  color: #8b96a8;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Social Links */
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(96, 165, 250, 0.1);
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  color: #60a5fa;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background: rgba(96, 165, 250, 0.2);
+  border-color: #60a5fa;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(96, 165, 250, 0.3);
+}
+
+.social-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Footer Sections */
+.footer-section {
+  min-width: 200px;
+}
+
+.footer-title {
+  color: #e2e8f0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, #60a5fa, transparent);
+}
+
+/* Footer Links */
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  color: #8b96a8;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.footer-links a::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #60a5fa;
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #60a5fa;
+  transform: translateX(5px);
+}
+
+.footer-links a:hover::before {
+  width: 100%;
+}
+
+/* Contact Section */
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #8b96a8;
+  font-size: 0.95rem;
+}
+
+.footer-contact svg {
+  width: 18px;
+  height: 18px;
+  color: #60a5fa;
+  flex-shrink: 0;
+}
+
+.footer-contact a {
+  color: #8b96a8;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-contact a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #60a5fa;
+  transition: width 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #60a5fa;
+}
+
+.footer-contact a:hover::after {
+  width: 100%;
+}
+
+.footer-contact span {
+  color: #8b96a8;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 3rem;
+}
+
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(96, 165, 250, 0.3) 50%, 
+    transparent 100%);
+  margin-bottom: 2rem;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  color: #6b7588;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-copyright p {
+  margin: 0;
+}
+
+.footer-bottom-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-bottom-links a {
+  color: #8b96a8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.footer-bottom-links a:hover {
+  color: #60a5fa;
+}
+
+.separator {
+  color: #4a5568;
+  font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 3rem 0 0;
+  }
+
+  .footer-container {
+    padding: 0 1.5rem;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+
+  .footer-copyright {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+  }
+
+  .footer-brand {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand {
+    font-size: 1.25rem;
+  }
+
+  .code-icon {
+    font-size: 1.4rem;
+  }
+
+  .social-link {
+    width: 36px;
+    height: 36px;
+  }
+
+  .social-link svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-tagline {
+    font-size: 0.9rem;
+  }
+
+  .footer-title {
+    font-size: 1rem;
+  }
+
+  .footer-links a,
+  .footer-contact li {
+    font-size: 0.9rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .separator {
+    display: none;
+  }
+}
+
+/* Smooth Scrolling for Anchor Links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Add subtle animations on scroll */
+@media (prefers-reduced-motion: no-preference) {
+  .footer-section {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .footer-section:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+
+  .footer-section:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+
+  .footer-section:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

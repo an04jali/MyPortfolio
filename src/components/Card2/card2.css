@@ -1,0 +1,25 @@
+.card2 {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card2:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card2 h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2d2d2d;
+}
+
+.card2 p {
+  font-size: 1rem;
+  color: #555;
+}
