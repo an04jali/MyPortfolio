@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./home.css"
+import "./Home.css"
 import { Typewriter } from 'react-simple-typewriter'
 
 function Home() {
